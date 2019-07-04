@@ -16,4 +16,4 @@ use ver. 20171115-1400
 use ver. 2.6.10  
 
 **DEMO**   
-[https://evofan.github.io/lwf_and_vuejs/](https://evofan.github.io/lwf_and_vuejs/)  
+[https://evofan.github.io/lwf_vuejs/](https://evofan.github.io/lwf_vuejs/)  
