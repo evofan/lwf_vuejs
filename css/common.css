@@ -1,0 +1,39 @@
+* {
+    font-family: Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper {
+    margin: 9px 18px 9px 18px;
+}
+#header {
+    height: 140px;
+}
+#lpart {
+    float: left;
+    margin-right: 140px;
+}
+#rpart {
+    position: absolute;
+    right: 10px;
+}
+#clear {
+    clear: both;
+    width: 100%;
+}
+#loading_icon {
+    visibility: hidden;
+    vertical-align: middle;
+    background-image: url(../img/loading.gif);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+div.exception {
+    font-family: monospace;
+    font-size: medium;
+    margin: 1px;
+    color: black;
+    background-color: white;
+    white-space: pre;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+  <title>LWF Loader: lwf_paper_vue</title>
+  <link rel="shortcut icon" href="./img/favicon-blue.png" />
+  <link rel="icon" href="./img/favicon-blue.png" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/viewer.css" />
+  <script type="text/javascript" src="./js/qrcode.js"></script>
+  <script type="text/javascript" src="./js/lwf.js"></script>
+  <script type="text/javascript">/* no pre user script is found */</script>
+  <script type="text/javascript" src="./js/underscore-min.js"></script>
+  <script type="text/javascript" src="./js/lwf-loader.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="./js/setting.js"></script>
+  <script type="text/javascript" src="./js/lwf-loader-util.js"></script>
+  <script type="text/javascript">
+    var setting = _.isObject(window["testlwf_settings"]) ? _.clone(window["testlwf_settings"]) : {};
+    setting.lwf = "./lwf_paper_vue";
+    setting.prefix = "./js/";
+
+    // Use given displaySetting if provided by default
+    var displaySetting = _.isObject(window["display_settings"]) ? _.clone(window["display_settings"]) : {};
+
+    window["testlwf_root_override"] = "./js/";
+    window["testlwf_name"] = "lwf_paper_vue";
+    window["testlwf_html5target"] = "loader";
+    window["testlwf_commandline"] = "swf2lwf -i -f lwf_paper_vue.fla lwf_paper_vue.swf lwf_paper_vue_0.json";
+    window["testlwf_warn"] = false;
+
+    window["testlwf_config"] = {
+      "use_page_show_hide_events": false,
+      "fr": 0,
+      "fs": 0,
+      "ds": 0.0,
+      "ac": false,
+      "ss": {
+        "w": 0,
+        "h": 0
+      },
+      "rootoffset": {
+        "x": 0,
+        "y": 0
+      },
+      "stage": {
+        "elastic": false,
+        "halign": 0,  // -1, 0, 1
+        "valign": -1   // -1, 0, 1
+      }
+    };
+    window["testlwf_statsdisplay"] = {
+      "graph": false,
+      "text": true
+    };
+
+    // further loads LWF in lwf-loader-util.js file
+    var lwfLoader = new window.LwfLoader();
+  </script>
+  <script src="./js/vue.min.js"></script>
+
+  <style>
+    #app {
+      position: absolute;
+      top: 10px;
+      left: 500px;
+      z-index: 10;
+      border: solid 1px #ffcc33;
+      background-color: #ffff99;
+      padding: 5px;
+
+    }
+
+    .debug {
+      width: 50px;
+      color: #ff0033;
+      z-index: 100;
+    }
+
+    .r {
+      font-weight: bold;
+      color: #333333;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header" style="margin-left: 10px; margin-top: 10px;"></div>
+  <div><p>&nbsp;&nbsp;use asset: https://japanese-style.beiz.jp/download/japanese-style/00001.html</p></div>
+  <div id="lwfs-sample" class="lwf" style="position: relative; background-color: black;"></div>
+  <div id="app">
+    <span class="r">for Debug</span><br>
+    <input type="number" v-model="items[0].num" min="1" class="debug" /> =
+    {{ items[0].name || numberWithDelimiter }}<br>
+    <div v-bind:style="errorMessageStyle">
+      <p v-show="!canSet">
+        Please enter 1 or more for the number.
+      </p>
+    </div>
+  </div>
+  <script src="./js/app_debug.js"></script>
+
+</body>
+
+</html>
