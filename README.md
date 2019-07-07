@@ -1,5 +1,9 @@
-﻿# LWFアニメーション上のパラメーターをVue.jsで動的に変更するテスト
-参照元は下記
+# Dynamically change parameters on LWF animation with Vue.js
+
+**DEMO**   
+[https://evofan.github.io/lwf_vuejs/](https://evofan.github.io/lwf_vuejs/)  
+
+reference  
 
 **LWF - Lightweight SWF**  
 [http://gree.github.io/lwf/](http://gree.github.io/lwf/)
@@ -14,6 +18,3 @@ use ver. 20171115-1400
 **Vue.js**  
 [https://jp.vuejs.org/index.html](https://jp.vuejs.org/index.html)  
 use ver. 2.6.10  
-
-**DEMO**   
-[https://evofan.github.io/lwf_vuejs/](https://evofan.github.io/lwf_vuejs/)  
