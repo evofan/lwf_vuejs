@@ -1,4 +1,4 @@
-# Dynamically change parameters on LWF animation with Vue.js
+# Dynamically change parameters on LWF animation with Vue.js.
 
 **DEMO**   
 [https://evofan.github.io/lwf_vuejs/](https://evofan.github.io/lwf_vuejs/)  
