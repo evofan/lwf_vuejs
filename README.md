@@ -1,6 +1,7 @@
 # Dynamically change parameters on LWF animation with Vue.js.
 
 **DEMO**   
+![https://raw.githubusercontent.com/evofan/lwf_vuejs/master/screenshot/cap_vue_lwf_re1.jpg](https://raw.githubusercontent.com/evofan/lwf_vuejs/master/screenshot/cap_vue_lwf_re1.jpg "image")  
 [https://evofan.github.io/lwf_vuejs/](https://evofan.github.io/lwf_vuejs/)  
 
 reference  
