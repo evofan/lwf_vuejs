@@ -1,8 +1,13 @@
 # Dynamically change parameters on LWF animation with Vue.js.
 
 **DEMO**   
-![https://raw.githubusercontent.com/evofan/lwf_vuejs/master/screenshot/cap_vue_lwf_re1.jpg](https://raw.githubusercontent.com/evofan/lwf_vuejs/master/screenshot/cap_vue_lwf_re1.jpg "image")  
+<img src="https://evofan.github.io/lwf_vuejs/screenshot/cap_vue_lwf_re1.jpg" width="50%">  
 [https://evofan.github.io/lwf_vuejs/](https://evofan.github.io/lwf_vuejs/)  
+
+<img src="https://evofan.github.io/lwf_vuejs/screenshot/cap_lwf_vue_b.jpg" width="25%">  
+validation  
+
+***
 
 reference  
 
